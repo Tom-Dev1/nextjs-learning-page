@@ -1,0 +1,13 @@
+export { LandingNavbar } from "./landing-navbar";
+export { LandingHero } from "./landing-hero";
+export { LandingProblemSolution } from "./landing-problem-solution";
+export { LandingBenefits } from "./landing-benefits";
+export { LandingCurriculum } from "./landing-curriculum";
+export { LandingResults } from "./landing-results";
+export { LandingInstructor } from "./landing-instructor";
+export { LandingTestimonials } from "./landing-testimonials";
+export { LandingFaq } from "./landing-faq";
+export { LandingFinalCta } from "./landing-final-cta";
+export { LandingFooter } from "./landing-footer";
+export { LandingCoursesList } from "./landing-courses-list";
+export { LandingVisitorCounter } from "./landing-visitor-counter";
