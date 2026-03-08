@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Check, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { PRICING, IS_DEMO_DATA } from "@/lib/constants";
+import { PRICING, } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 function formatPrice(n: number) {
@@ -135,11 +135,7 @@ export function LandingPricing() {
                     <span className="text-2xl font-bold text-foreground">
                       {formatPrice(t.salePrice)}
                     </span>
-                    {IS_DEMO_DATA && (
-                      <span title="Dữ liệu demo">
-                        <Info className="inline h-4 w-4 text-muted-foreground" aria-label="Demo data" />
-                      </span>
-                    )}
+
                   </div>
                 </CardHeader>
                 <CardContent className="flex-1">

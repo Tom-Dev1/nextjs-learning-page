@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { FOOTER, SITE } from "@/lib/constants";
-import { IS_DEMO_DATA } from "@/lib/constants";
 
 export function LandingFooter() {
   return (
@@ -16,8 +15,8 @@ export function LandingFooter() {
           </div>
           <nav aria-label="Footer">
             <ul className="flex flex-wrap gap-4">
-              {FOOTER.links.map((link) => (
-                <li key={link.href}>
+              {FOOTER.links.map((link, index) => (
+                <li key={index}>
                   <Link
                     href={link.href}
                     className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring rounded"
@@ -44,11 +43,7 @@ export function LandingFooter() {
             </ul>
           </nav>
         </div>
-        {IS_DEMO_DATA && (
-          <p className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-            {FOOTER.disclaimer}
-          </p>
-        )}
+
         <p className="mt-4 text-center text-xs text-muted-foreground">
           {FOOTER.copyright}
         </p>

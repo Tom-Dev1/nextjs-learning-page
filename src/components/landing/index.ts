@@ -11,3 +11,4 @@ export { LandingFinalCta } from "./landing-final-cta";
 export { LandingFooter } from "./landing-footer";
 export { LandingCoursesList } from "./landing-courses-list";
 export { LandingVisitorCounter } from "./landing-visitor-counter";
+export { ScrollToTop, ContactButton } from "./scroll-to-top";

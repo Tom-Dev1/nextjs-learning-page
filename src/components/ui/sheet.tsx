@@ -95,21 +95,23 @@ export function SheetContent({
         aria-modal="true"
         aria-label="Menu điều hướng"
         className={cn(
-          "fixed top-0 z-50 flex h-full w-[min(320px,85vw)] flex-col gap-4 border-l border-border bg-card p-6 shadow-xl transition-transform duration-300 ease-out",
+          "fixed top-0 bottom-0 z-50 flex w-[min(320px,85vw)] flex-col border-l border-border bg-card shadow-xl transition-transform duration-300 ease-out overflow-y-auto",
           side === "right" ? "right-0" : "left-0",
           className
         )}
         style={{ backgroundColor: "var(--card)" }}
       >
-        <button
-          type="button"
-          onClick={() => onOpenChange(false)}
-          className="absolute right-4 top-4 rounded-md p-1 hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring"
-          aria-label="Đóng menu"
-        >
-          <X className="h-5 w-5" />
-        </button>
-        <div className="mt-8 flex flex-col gap-4">{children}</div>
+        <div className="relative flex flex-col gap-4 p-6">
+          <button
+            type="button"
+            onClick={() => onOpenChange(false)}
+            className="absolute right-4 top-4 z-10 rounded-md p-1 hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring"
+            aria-label="Đóng menu"
+          >
+            <X className="h-5 w-5" />
+          </button>
+          <div className="mt-8 flex flex-col gap-4">{children}</div>
+        </div>
       </div>
     </>
   );

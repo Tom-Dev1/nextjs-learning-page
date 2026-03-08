@@ -19,8 +19,7 @@ export function LandingFinalCta() {
     e.preventDefault();
     if (!canSubmit) return;
     setTouched({ email: true, phone: true });
-    // Demo: không gửi thật
-    alert("Cảm ơn bạn! (Demo — form không gửi dữ liệu thật.)");
+    alert("Cảm ơn bạn!");
   };
 
   return (
@@ -53,7 +52,7 @@ export function LandingFinalCta() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Điền email và số điện thoại để nhận tài liệu (demo — không gửi thật).
+          Điền email và số điện thoại để nhận tài liệu.
         </motion.p>
 
         <motion.form

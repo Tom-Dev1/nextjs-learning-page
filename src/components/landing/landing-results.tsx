@@ -1,10 +1,8 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Info } from "lucide-react";
 import { CASE_STUDIES } from "@/lib/constants";
-import { IS_DEMO_DATA } from "@/lib/constants";
 import { useCountUp } from "@/hooks/use-count-up";
 
 function ResultCard({
@@ -48,11 +46,7 @@ function ResultCard({
         <span className="text-3xl font-bold text-foreground">
           {afterFormatted}
         </span>
-        {IS_DEMO_DATA && (
-          <span title="Dữ liệu demo" className="inline-flex">
-            <Info className="h-4 w-4 text-muted-foreground" aria-label="Demo data" />
-          </span>
-        )}
+
       </p>
       <p className="mt-1 text-sm text-muted-foreground">{label}</p>
     </motion.article>
@@ -74,16 +68,9 @@ export function LandingResults() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Kết quả học viên (minh họa)
+          Kết quả học viên
         </motion.h2>
-        <motion.p
-          className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
-          Số liệu mô phỏng — không phải cam kết. Kết quả phụ thuộc vào nỗ lực áp dụng.
-        </motion.p>
+
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
           {CASE_STUDIES.map((c) => (

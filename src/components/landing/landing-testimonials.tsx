@@ -37,7 +37,7 @@ export function LandingTestimonials() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Phản hồi minh họa từ học viên (dữ liệu demo).
+          Phản hồi minh họa từ học viên.
         </motion.p>
 
         <div className="relative mt-12 min-h-[260px]" ref={scrollRef}>

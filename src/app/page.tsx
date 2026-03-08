@@ -13,7 +13,10 @@ import {
   LandingFinalCta,
   LandingFooter,
   LandingCoursesList,
+  ScrollToTop,
+  ContactButton,
 } from "@/components/landing";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export default function Home() {
   const jsonLd = createCourseJsonLd();
@@ -26,22 +29,26 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         strategy="afterInteractive"
       />
-      <div className="min-h-screen bg-background text-foreground">
-        <LandingNavbar />
-        <main id="main-content" role="main">
-          <LandingHero />
-          <LandingCoursesList />
-          <LandingProblemSolution />
-          <LandingBenefits />
-          <LandingCurriculum />
-          <LandingResults />
-          <LandingInstructor />
-          <LandingTestimonials />
-          <LandingFaq />
-          <LandingFinalCta />
-          <LandingFooter />
-        </main>
-      </div>
+      <AuroraBackground>
+        <div className="min-h-screen bg-background text-foreground">
+          <LandingNavbar />
+          <main id="main-content" role="main">
+            <LandingHero />
+            <LandingCoursesList />
+            <LandingProblemSolution />
+            <LandingBenefits />
+            <LandingCurriculum />
+            <LandingResults />
+            <LandingInstructor />
+            <LandingTestimonials />
+            <LandingFaq />
+            <LandingFinalCta />
+            <LandingFooter />
+          </main>
+          <ContactButton />
+          <ScrollToTop />
+        </div>
+      </AuroraBackground>
     </>
   );
 }

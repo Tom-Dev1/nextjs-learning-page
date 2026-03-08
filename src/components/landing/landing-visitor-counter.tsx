@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Users, TrendingUp, TrendingDown } from "lucide-react";
-import { IS_DEMO_DATA } from "@/lib/constants";
 import { useCountUp } from "@/hooks/use-count-up";
 
 const BASE_VISITORS = 200;
@@ -105,11 +104,7 @@ export function LandingVisitorCounter() {
           </AnimatePresence>
         </div>
       </div>
-      {IS_DEMO_DATA && (
-        <span className="ml-1 text-xs text-muted-foreground" title="Dữ liệu demo">
-          (demo)
-        </span>
-      )}
+
     </motion.div>
   );
 }

@@ -1,8 +1,7 @@
 /**
- * Toàn bộ dữ liệu trên landing là DỮ LIỆU GIẢ (demo) phục vụ minh hoạ UI/UX.
+ * Toàn bộ dữ liệu trên landing là DỮ LIỆU GIẢ phục vụ minh hoạ UI/UX.
  * Không được hiểu là dữ liệu thật.
  */
-export const IS_DEMO_DATA = true;
 
 export const SITE = {
   name: "MARKETING MASTERCLASS",
@@ -17,7 +16,7 @@ export const DEMO_HERO = {
   rating: 4.8,
   ratingCount: 1247,
   studentCount: 2000,
-  trustBadges: ["Demo: Shopee", "Demo: TikTok", "Demo: Meta Ads", "Demo: Google Analytics"] as const,
+  trustBadges: ["Shopee", "TikTok", "Meta Ads", "Google Analytics"] as const,
 };
 
 export const NAV_LINKS = [
@@ -96,7 +95,7 @@ export const BENEFITS = [
   {
     icon: "refreshCw",
     title: "Cập nhật liên tục",
-    desc: "Nội dung bám sát thay đổi thuật toán và best practice mới nhất (demo).",
+    desc: "Nội dung bám sát thay đổi thuật toán và best practice mới nhất.",
   },
 ] as const;
 
@@ -191,7 +190,7 @@ export const CURRICULUM_MODULES = [
   },
 ] as const;
 
-/** Demo: case study metrics giả */
+/** case study metrics giả */
 export const CASE_STUDIES = [
   {
     title: "ROAS cải thiện",
@@ -222,14 +221,14 @@ export const INSTRUCTOR = {
   role: "6+ năm Digital Marketing",
   bio: "Chuyên gia digital marketing, từng vận hành campaign cho nhiều thương hiệu và shop online.",
   highlights: [
-    { label: "Ngân sách ads đã chạy (demo)", value: "500M+ VND" },
-    { label: "Ngành đã tư vấn (demo)", value: "15+ ngành" },
-    { label: "Học viên đã đào tạo (demo)", value: "2.000+" },
+    { label: "Ngân sách ads đã chạy", value: "500M+ VND" },
+    { label: "Ngành đã tư vấn", value: "15+ ngành" },
+    { label: "Học viên đã đào tạo", value: "2.000+" },
   ],
   timeline: [
-    { year: "2019", text: "Bắt đầu chạy Meta Ads cho thương hiệu nội địa (demo)." },
-    { year: "2021", text: "Mở rộng sang TikTok Ads, e-commerce (demo)." },
-    { year: "2024", text: "Tập trung đào tạo và tư vấn chiến lược (demo)." },
+    { year: "2019", text: "Bắt đầu chạy Meta Ads cho thương hiệu nội địa." },
+    { year: "2021", text: "Mở rộng sang TikTok Ads, e-commerce." },
+    { year: "2024", text: "Tập trung đào tạo và tư vấn chiến lược." },
   ],
   avatar: "/instructor-avatar.jpg",
 } as const;
@@ -316,10 +315,10 @@ export const PRICING = {
       "Q&A riêng cho nhóm",
       "Tài khoản nhóm (5 người)",
       "Ưu tiên hỗ trợ",
-      "Bonus: buổi review 1-1 (demo)",
+      "Bonus: buổi review 1-1",
     ],
   },
-  guarantee: "Hoàn tiền 7 ngày nếu không phù hợp (demo)",
+  guarantee: "Hoàn tiền 7 ngày nếu không phù hợp",
 } as const;
 
 export const FAQ_ITEMS = [
@@ -353,7 +352,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: "Có chứng nhận không?",
-    a: "Sau khi hoàn thành khóa và làm bài kiểm tra (nếu có), bạn có thể tải chứng nhận hoàn thành (demo).",
+    a: "Sau khi hoàn thành khóa và làm bài kiểm tra (nếu có), bạn có thể tải chứng nhận hoàn thành.",
   },
 ] as const;
 
@@ -368,7 +367,7 @@ export const FOOTER = {
     { label: "Facebook", href: "#", icon: "facebook" },
     { label: "YouTube", href: "#", icon: "youtube" },
   ],
-  copyright: "© 2025 Marketing Masterclass. Demo only.",
+  copyright: "© 2025 Marketing Masterclass.",
 } as const;
 
 /** Demo: Danh sách khóa học với giá khác nhau */

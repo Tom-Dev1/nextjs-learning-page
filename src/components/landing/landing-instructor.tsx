@@ -2,9 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Info } from "lucide-react";
 import { INSTRUCTOR } from "@/lib/constants";
-import { IS_DEMO_DATA } from "@/lib/constants";
 
 export function LandingInstructor() {
   return (
@@ -43,11 +41,7 @@ export function LandingInstructor() {
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2">
               <h3 className="text-xl font-semibold text-foreground">{INSTRUCTOR.name}</h3>
-              {IS_DEMO_DATA && (
-                <span title="Dữ liệu demo">
-                  <Info className="h-4 w-4 text-muted-foreground" aria-label="Demo data" />
-                </span>
-              )}
+
             </div>
             <p className="mt-1 text-muted-foreground">{INSTRUCTOR.role}</p>
             <p className="mt-4 text-sm text-muted-foreground">{INSTRUCTOR.bio}</p>
@@ -60,7 +54,6 @@ export function LandingInstructor() {
               ))}
             </ul>
             <div className="mt-8 border-t border-border pt-6">
-              <p className="text-sm font-medium text-foreground">Timeline (demo)</p>
               <ul className="mt-3 space-y-2">
                 {INSTRUCTOR.timeline.map((t) => (
                   <li key={t.year} className="flex gap-3 text-sm">
