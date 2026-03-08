@@ -29,12 +29,7 @@ export function LandingFinalCta() {
       className="relative overflow-hidden border-t border-border py-20 px-4 sm:px-6"
     >
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/10 via-background to-primary/5" />
-      <motion.div
-        className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary/10 blur-3xl"
-        animate={{ opacity: [0.3, 0.6, 0.3] }}
-        transition={{ duration: 6, repeat: Infinity }}
-        aria-hidden
-      />
+
 
       <div className="mx-auto max-w-2xl text-center">
         <motion.h2

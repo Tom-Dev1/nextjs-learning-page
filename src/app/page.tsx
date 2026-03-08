@@ -29,26 +29,26 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         strategy="afterInteractive"
       />
-      <AuroraBackground>
-        <div className="min-h-screen bg-background text-foreground">
-          <LandingNavbar />
-          <main id="main-content" role="main">
+      <div className="min-h-screen text-foreground">
+        <LandingNavbar />
+        <main id="main-content" role="main">
+          <AuroraBackground className="text-foreground">
             <LandingHero />
-            <LandingCoursesList />
-            <LandingProblemSolution />
-            <LandingBenefits />
-            <LandingCurriculum />
-            <LandingResults />
-            <LandingInstructor />
-            <LandingTestimonials />
-            <LandingFaq />
-            <LandingFinalCta />
-            <LandingFooter />
-          </main>
-          <ContactButton />
-          <ScrollToTop />
-        </div>
-      </AuroraBackground>
+          </AuroraBackground>
+          <LandingCoursesList />
+          <LandingProblemSolution />
+          <LandingBenefits />
+          <LandingCurriculum />
+          <LandingResults />
+          <LandingInstructor />
+          <LandingTestimonials />
+          <LandingFaq />
+          <LandingFinalCta />
+          <LandingFooter />
+        </main>
+        <ContactButton />
+        <ScrollToTop />
+      </div>
     </>
   );
 }
